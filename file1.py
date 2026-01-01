@@ -10,7 +10,9 @@
 # print("Fee: ",fee)
 # print("DOB: ",dob)
 
-num1 = 12
-num2 = 3
+name = input("Enter your name: ")
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
 result = num1 * num2
+print(name)
 print(result)
