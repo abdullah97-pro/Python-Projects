@@ -37,15 +37,28 @@
 # else:
 #     print(1)
 
-areaCode = int(input("Enter Code: "))
+# areaCode = int(input("Enter Code: "))
 
-if areaCode == 90:
-    print("Turkey")
-elif areaCode == 91:
-    print("India")
-elif areaCode == 92:
-    print("Pakistan")
-elif areaCode == 93:
-    print("Afghanistan")
+# if areaCode == 90:
+#     print("Turkey")
+# elif areaCode == 91:
+#     print("India")
+# elif areaCode == 92:
+#     print("Pakistan")
+# elif areaCode == 93:
+#     print("Afghanistan")
+# else:
+#     print("Try again !!!")
+
+age = int(input("Enter your age: "))
+verified = bool(input("Verify -> Yes = 1 / No = 0: "))
+
+# if age > 17 and verified == True:
+#     print("You have been selected!")
+# else:
+#     print("Try Next time...")
+
+if age > 17 or verified == True:
+    print("You have been selected!")
 else:
-    print("Try again !!!")
+    print("Try Next time...")
