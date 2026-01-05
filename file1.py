@@ -50,15 +50,27 @@
 # else:
 #     print("Try again !!!")
 
-age = int(input("Enter your age: "))
-verified = bool(input("Verify -> Yes = 1 / No = 0: "))
+# age = int(input("Enter your age: "))
+# verified = bool(input("Verify -> Yes = 1 / No = 0: "))
 
-# if age > 17 and verified == True:
+# # if age > 17 and verified == True:
+# #     print("You have been selected!")
+# # else:
+# #     print("Try Next time...")
+
+# if age > 17 or verified == True:
 #     print("You have been selected!")
 # else:
 #     print("Try Next time...")
 
-if age > 17 or verified == True:
-    print("You have been selected!")
-else:
-    print("Try Next time...")
+num1 = int(input("Enter number: "))
+
+if num1 <= 800:
+    print(num1 * 2)
+elif num1 > 800 and num1 <= 1600:
+    num2 = num1 - 800
+    num1 = num1 - num2
+
+    total = (num1 * 2) + (num2 * 3)
+
+    print(total)
