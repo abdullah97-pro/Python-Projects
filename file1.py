@@ -114,9 +114,26 @@
 #         continue
 #     print(x)
 
-for x in range(5):
+# for x in range(5):
     
-    if x == 3:
-        pass
+#     if x == 3:
+#         pass
 
-    
+
+while True:
+    num1 = float(input("Enter number1: "))
+    ope = input("Enter operator: +, -, *. /, % : ")
+    num2 = float(input("Enter number2: "))
+
+    if ope == "+":
+        print("Result: ", (num1 + num2))
+    elif ope == "-":
+        print("Result: ", (num1 - num2))
+    elif ope == "*":
+        print("Result: ", (num1 * num2))
+    elif ope == "/":
+        print("Result: ", (num1 / num2))
+    elif ope == "%":
+        print("Result: ", (num1 % num2))
+    else:
+        print("Try again!!!")
