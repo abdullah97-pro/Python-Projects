@@ -120,20 +120,26 @@
 #         pass
 
 
-while True:
-    num1 = float(input("Enter number1: "))
-    ope = input("Enter operator: +, -, *. /, % : ")
-    num2 = float(input("Enter number2: "))
+# while True:
+#     num1 = float(input("Enter number1: "))
+#     ope = input("Enter operator: +, -, *. /, % : ")
+#     num2 = float(input("Enter number2: "))
 
-    if ope == "+":
-        print("Result: ", (num1 + num2))
-    elif ope == "-":
-        print("Result: ", (num1 - num2))
-    elif ope == "*":
-        print("Result: ", (num1 * num2))
-    elif ope == "/":
-        print("Result: ", (num1 / num2))
-    elif ope == "%":
-        print("Result: ", (num1 % num2))
-    else:
-        print("Try again!!!")
+#     if ope == "+":
+#         print("Result: ", (num1 + num2))
+#     elif ope == "-":
+#         print("Result: ", (num1 - num2))
+#     elif ope == "*":
+#         print("Result: ", (num1 * num2))
+#     elif ope == "/":
+#         print("Result: ", (num1 / num2))
+#     elif ope == "%":
+#         print("Result: ", (num1 % num2))
+#     else:
+#         print("Try again!!!")
+
+y = int(input("Enter number for multiplication: "))
+len = int(input("Enter number for length of multiplication: "))
+
+for x in range(1,len+1):
+    print(y," * ",x," = ",x * y)
