@@ -1,52 +1,97 @@
-# # # # x = int(input("Enter your number1: "))
-# # # # y = int(input("Enter your number2: "))
-# # # # z = int(input("Enter your number3: "))
+# # # # # x = int(input("Enter your number1: "))
+# # # # # y = int(input("Enter your number2: "))
+# # # # # z = int(input("Enter your number3: "))
 
-# # # # x = x + y
-# # # # y = y - z
-# # # # z = x + y * z
+# # # # # x = x + y
+# # # # # y = y - z
+# # # # # z = x + y * z
 
-# # # # print(x)
-# # # # print(y)
-# # # # print(z)
+# # # # # print(x)
+# # # # # print(y)
+# # # # # print(z)
 
-# # # calc = eval(input("Enter math expression: "))
-# # # print(calc)
-# # # print(type(calc))
-# # # x = True
-
-
-# # import math 
-
-# # # print(math.pow(2,10))
-# # # print(math.pi)
-# # # print(math.sqrt(25))
-
-# # r = float(input("Enter radius: "))
-# # area = math.pi * r * r
-# # print("Area =", area)
+# # # # calc = eval(input("Enter math expression: "))
+# # # # print(calc)
+# # # # print(type(calc))
+# # # # x = True
 
 
-# name = "Fanaven Technology"
+# # # import math 
 
-# # print(name)
-# # print(name[0])
-# # print(name[4])
-# # print(name[-1])
+# # # # print(math.pow(2,10))
+# # # # print(math.pi)
+# # # # print(math.sqrt(25))
 
-# # print(name[0:9])
-# # print(name[3:])
-# # print(name[:15])
-# # print(name[:])
-# # print(name[5:-1])
-# # print(name[-14:-2])
+# # # r = float(input("Enter radius: "))
+# # # area = math.pi * r * r
+# # # print("Area =", area)
 
-# print(name[::-1])
 
-word = input("Enter string: ")
+# # name = "Fanaven Technology"
 
-if word == word[::-1]:
-    print("Palindrome")
+# # # print(name)
+# # # print(name[0])
+# # # print(name[4])
+# # # print(name[-1])
+
+# # # print(name[0:9])
+# # # print(name[3:])
+# # # print(name[:15])
+# # # print(name[:])
+# # # print(name[5:-1])
+# # # print(name[-14:-2])
+
+# # print(name[::-1])
+
+# word = input("Enter string: ")
+
+# if word == word[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+
+# age = 16.5 # statment
+
+# if age < 17: 
+#     age = f"{age}"
+#     y = "You are young and you are "+age+" years old"
+#     print(y)
+#     print(type(age))
+
+# age = 16.5 
+
+# if age > 17:
+#     print("You are verified")
+# else:
+#     if (17 - age) > 1:
+#         print("Still need to wait for",(17 - age),"yrs")
+#     else:
+#         x = 17 - age
+#         # if x == 1:
+#         #     x = x / 12
+#         #     x = f"{x}"
+
+#         #     x = (x == "0.08333333333333333")
+
+
+
+#             # print("Still need to wait for",x,"month")
+#         for i in range(x,13):
+#             pass
+#         print("Still need to wait for",i,"month")
+
+
+
+
+age = 16.5
+
+if age >= 17:
+    print("You are verified")
 else:
-    print("Not Palindrome")
+    remaining_years = 17 - age
 
+    if remaining_years >= 1:
+        print("Still need to wait for", round(remaining_years, 1), "years")
+    else:
+        remaining_months = int(remaining_years * 12)
+        print("Still need to wait for", remaining_months, "months")
