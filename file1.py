@@ -208,21 +208,32 @@
 #     print("Try next time!")
 
 
-student = {
-    "name":"Ali",
-    "age": 20,
-    "dob": "2000/01/01",
-    "email": "ali@gmail.com",
-    "fee": 100
-}
-# print(student)
-# print(student.get("fee","Not found"))
-# print(student.keys())
+# student = {
+#     "name":"Ali",
+#     "age": 20,
+#     "dob": "2000/01/01",
+#     "email": "ali@gmail.com",
+#     "fee": 100
+# }
+# # print(student)
+# # print(student.get("fee","Not found"))
+# # print(student.keys())
+# # print(student.values())
+# # print(student.items())
+# student.update({"gender":"Male"})
+
+# # print(student)
+# student.pop("fee")
+
 # print(student.values())
-# print(student.items())
-student.update({"gender":"Male"})
 
-# print(student)
-student.pop("fee")
 
-print(student.values())
+student = {
+    "ali": {"grade":70,"gender":"male","fee":100},
+    "dawood": {"grade":70,"gender":"male","fee":110},
+    "seyar": {"grade":70,"gender":"male","fee":120}
+}
+
+print(student["ali"]["fee"])
+print(student["dawood"]["fee"])
+print(student["seyar"]["fee"])
