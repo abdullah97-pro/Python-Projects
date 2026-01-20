@@ -228,12 +228,16 @@
 # print(student.values())
 
 
-student = {
-    "ali": {"grade":70,"gender":"male","fee":100},
-    "dawood": {"grade":70,"gender":"male","fee":110},
-    "seyar": {"grade":70,"gender":"male","fee":120}
-}
+# student = {
+#     "ali": {"grade":70,"gender":"male","fee":100},
+#     "dawood": {"grade":70,"gender":"male","fee":110},
+#     "seyar": {"grade":70,"gender":"male","fee":120}
+# }
 
-print(student["ali"]["fee"])
-print(student["dawood"]["fee"])
-print(student["seyar"]["fee"])
+# print(student["ali"]["fee"])
+# print(student["dawood"]["fee"])
+# print(student["seyar"]["fee"])
+
+
+squares = {x: x**2 for x in range(1, 6)}
+print(squares.keys())
