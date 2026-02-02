@@ -400,3 +400,24 @@
 # dep = uni.Department("Computer Science")
 # dep.display()
 
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # private variable
+
+    @property
+    def balance(self):
+        return self.__balance
+
+    @balance.setter
+    def balance(self, amount):
+        if amount >= 0:
+            self.__balance = amount
+        else:
+            print("Invalid balance!")
+
+account = BankAccount(1000)
+print(account.balance)  # 1000
+account.balance = 500
+print(account.balance)  # 500
+account.balance = -200  # Invalid balance!
